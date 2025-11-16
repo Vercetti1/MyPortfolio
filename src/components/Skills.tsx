@@ -29,8 +29,8 @@ const skills = [
   },
   {
     icon: Globe,
-    title: 'Tools & Others',
-    items: ['Git', 'CI/CD', 'Testing', 'Agile', 'Linux'],
+    title: 'Tools & Testing',
+    items: ['Git', 'CI/CD', 'Cypress', 'Postman', 'Linux'],
   },
 ];
 

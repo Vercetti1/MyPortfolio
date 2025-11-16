@@ -25,13 +25,13 @@ export default function Hero({ scrollY }: HeroProps) {
           }}
         >
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-extralight tracking-tight text-stone-900 mb-6 animate-fade-up">
-            Software
+            Adeyinka
           </h1>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-extralight tracking-tight text-stone-900 mb-8 animate-fade-up animation-delay-200">
-            Developer
+            Tomisin
           </h1>
           <p className="text-lg md:text-xl font-light text-stone-600 tracking-wide max-w-2xl mx-auto mb-12 animate-fade-up animation-delay-400">
-            Crafting digital experiences with precision and creativity
+            Software Developer | Full-Stack | Problem Solver
           </p>
 
           <a

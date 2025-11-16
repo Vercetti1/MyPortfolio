@@ -1,15 +1,18 @@
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter, Phone } from 'lucide-react';
+import { useState } from 'react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const socials = [
   { icon: Github, label: 'GitHub', href: 'https://github.com' },
   { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
   { icon: Twitter, label: 'Twitter', href: 'https://twitter.com' },
-  { icon: Mail, label: 'Email', href: 'mailto:hello@example.com' },
+  { icon: Mail, label: 'Email', href: 'mailto:tomisinadeyinka352@gmail.com' },
+  { icon: Phone, label: 'Phone', href: 'tel:+2349131135978' },
 ];
 
 export default function Contact() {
   const [ref, isVisible] = useIntersectionObserver({ threshold: 0.2 });
+  const [showPhone, setShowPhone] = useState(false);
 
   return (
     <section id="contact" className="py-32 px-6 lg:px-12 bg-stone-900">
@@ -29,23 +32,22 @@ export default function Contact() {
           </p>
 
           <a
-            href="mailto:hello@example.com"
+            href="mailto:tomisinadeyinka352@gmail.com"
             className="inline-flex items-center gap-3 px-10 py-5 bg-stone-50 text-stone-900 text-sm tracking-widest uppercase font-light hover:bg-stone-200 transition-all duration-300 mb-16 group"
           >
             Get In Touch
             <Mail size={18} className="group-hover:translate-x-1 transition-transform duration-300" />
           </a>
 
-          <div className="flex justify-center gap-8 mb-16">
+          <div className="flex justify-center gap-8 mb-16 flex-wrap">
             {socials.map((social) => {
               const Icon = social.icon;
+              const isPhone = social.label === 'Phone';
               return (
-                <a
+                <button
                   key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group"
+                  onClick={() => isPhone ? setShowPhone(!showPhone) : window.open(social.href)}
+                  className="group relative transition-all duration-300"
                   aria-label={social.label}
                 >
                   <Icon
@@ -53,7 +55,12 @@ export default function Contact() {
                     className="text-stone-400 group-hover:text-stone-50 transition-all duration-300 group-hover:scale-110"
                     strokeWidth={1.5}
                   />
-                </a>
+                  {isPhone && showPhone && (
+                    <div className="absolute top-full mt-3 px-4 py-2 bg-stone-800 text-stone-50 text-xs rounded whitespace-nowrap tracking-wide font-light animate-fade-up">
+                      +2349131135978
+                    </div>
+                  )}
+                </button>
               );
             })}
           </div>
