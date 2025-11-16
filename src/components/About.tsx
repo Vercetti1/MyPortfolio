@@ -1,4 +1,5 @@
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import tomisinImg from '../assets/tomisin.png';
 
 export default function About() {
   const [ref, isVisible] = useIntersectionObserver({ threshold: 0.2 });
@@ -33,10 +34,12 @@ export default function About() {
           </div>
 
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-stone-200 to-stone-300 rounded-sm overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center text-stone-400 text-sm tracking-wider">
-                Your photo here
-              </div>
+            <div className="aspect-auto bg-gradient-to-br from-stone-200 to-stone-300 rounded-sm overflow-hidden">
+              <img
+                src={tomisinImg}
+                alt="Tomisin"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -bottom-6 -right-6 w-full h-full border border-stone-300 rounded-sm -z-10" />
           </div>

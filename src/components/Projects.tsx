@@ -1,27 +1,42 @@
 import { ExternalLink, Github } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import geminiImg from '../assets/gemini.png';
+import foodieImg from '../assets/Foodie.png';
+import sayIoImg from '../assets/say.io.png';
+import ticTacToeImg from '../assets/tic-tac-toe.png';
 
 const projects = [
   {
-    title: 'Project One',
+    title: 'Gemini AI Clone',
     description: 'A full-stack application built with modern technologies, featuring real-time updates and seamless user experience.',
     tech: ['React', 'Node.js', 'PostgreSQL', 'WebSocket'],
     github: '#',
     live: '#',
+    image: geminiImg,
   },
   {
-    title: 'Project Two',
+    title: 'Foodie',
     description: 'Mobile-first e-commerce platform with advanced filtering, secure payments, and inventory management.',
     tech: ['Next.js', 'TypeScript', 'Stripe', 'Tailwind'],
     github: '#',
     live: '#',
+    image: foodieImg,
   },
   {
-    title: 'Project Three',
+    title: 'Say.io',
     description: 'AI-powered analytics dashboard providing actionable insights with beautiful data visualizations.',
     tech: ['Python', 'React', 'TensorFlow', 'D3.js'],
     github: '#',
     live: '#',
+    image: sayIoImg,
+  },
+  {
+    title: 'TIC-TAC-TOE',
+    description: 'Interactive tic-tac-toe game built with React, featuring AI opponent and responsive design.',
+    tech: ['React', 'JavaScript', 'CSS'],
+    github: '#',
+    live: '#',
+    image: ticTacToeImg,
   },
 ];
 
@@ -45,7 +60,7 @@ export default function Projects() {
 
         <div className="space-y-24">
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} index={index} />
+            <ProjectCard key={project.title} project={project} index={index} />
           ))}
         </div>
       </div>
@@ -67,9 +82,11 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
       <div className="grid md:grid-cols-5 gap-8 items-center">
         <div className={`md:col-span-3 ${index % 2 === 1 ? 'md:order-2' : ''}`}>
           <div className="relative aspect-video bg-gradient-to-br from-stone-300 to-stone-400 rounded-sm overflow-hidden group-hover:shadow-2xl transition-shadow duration-500">
-            <div className="absolute inset-0 bg-stone-900/10 group-hover:bg-stone-900/0 transition-colors duration-500 flex items-center justify-center text-stone-500 text-sm tracking-wider">
-              Project preview
-            </div>
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 

@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const socials = [
-  { icon: Github, label: 'GitHub', href: 'https://github.com' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
-  { icon: Twitter, label: 'Twitter', href: 'https://twitter.com' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/Vercetti1' },
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/tomisin-adeyinka' },
+  { icon: Twitter, label: 'Twitter', href: 'https://x.com/vercetti_dev?s=21' },
   { icon: Mail, label: 'Email', href: 'mailto:tomisinadeyinka352@gmail.com' },
   { icon: Phone, label: 'Phone', href: 'tel:+2349131135978' },
 ];

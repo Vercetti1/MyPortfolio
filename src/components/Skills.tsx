@@ -5,17 +5,17 @@ const skills = [
   {
     icon: Code2,
     title: 'Frontend Development',
-    items: ['React', 'TypeScript', 'Next.js', 'Vue.js', 'Tailwind CSS'],
+    items: ['React', 'TypeScript', 'Next.js', 'Redux', 'Tailwind CSS'],
   },
   {
     icon: Server,
     title: 'Backend Development',
-    items: ['Node.js', 'Python', 'PostgreSQL', 'REST APIs', 'GraphQL'],
+    items: ['Node.js', 'Python'],
   },
   {
     icon: Database,
     title: 'Database & Cloud',
-    items: ['SQL', 'MongoDB', 'AWS', 'Docker', 'Redis'],
+    items: ['SQL'],
   },
   {
     icon: Smartphone,
@@ -30,7 +30,7 @@ const skills = [
   {
     icon: Globe,
     title: 'Tools & Testing',
-    items: ['Git', 'CI/CD', 'Cypress', 'Postman', 'Linux'],
+    items: ['Git', 'CI/CD', 'Cypress', 'Postman'],
   },
 ];
 
