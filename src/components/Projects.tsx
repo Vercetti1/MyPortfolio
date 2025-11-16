@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'Gemini AI Clone',
     description: 'A full-stack application built with modern technologies, featuring real-time updates and seamless user experience.',
-    tech: ['React', 'Node.js', 'PostgreSQL', 'WebSocket'],
+    tech: ['React.js', 'API'],
     github: '#',
     live: '#',
     image: geminiImg,
@@ -17,7 +17,7 @@ const projects = [
   {
     title: 'Foodie',
     description: 'Mobile-first e-commerce platform with advanced filtering, secure payments, and inventory management.',
-    tech: ['Next.js', 'TypeScript', 'Stripe', 'Tailwind'],
+    tech: ['React.js', 'Tailwind'],
     github: '#',
     live: '#',
     image: foodieImg,
@@ -25,7 +25,7 @@ const projects = [
   {
     title: 'Say.io',
     description: 'AI-powered analytics dashboard providing actionable insights with beautiful data visualizations.',
-    tech: ['Python', 'React', 'TensorFlow', 'D3.js'],
+    tech: ['HTML', 'CSS', 'Javascript'],
     github: '#',
     live: '#',
     image: sayIoImg,
@@ -33,7 +33,7 @@ const projects = [
   {
     title: 'TIC-TAC-TOE',
     description: 'Interactive tic-tac-toe game built with React, featuring AI opponent and responsive design.',
-    tech: ['React', 'JavaScript', 'CSS'],
+    tech: ['React.js', 'JavaScript', 'TailwindCSS'],
     github: '#',
     live: '#',
     image: ticTacToeImg,
