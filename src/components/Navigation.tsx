@@ -41,7 +41,7 @@ export default function Navigation({ scrollY }: NavigationProps) {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           >
-            Portfolio
+            cy.get(Tomisin)
           </a>
 
           <div className="hidden md:flex items-center gap-12">
