@@ -66,17 +66,6 @@ export default function Navigation({ scrollY }: NavigationProps) {
                 <FileText size={16} />
                 Resume
               </a>
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-light tracking-wide text-stone-700 hover:text-stone-900 hover:bg-stone-100 transition-all duration-300 rounded"
-              >
-                <Download size={16} />
-                Portfolio
-              </a>
             </div>
           </div>
 

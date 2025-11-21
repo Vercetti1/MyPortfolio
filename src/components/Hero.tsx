@@ -55,13 +55,6 @@ export default function Hero({ scrollY }: HeroProps) {
               <FileText size={16} />
               View Resume
             </a>
-            <button
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-stone-900 text-stone-900 text-sm tracking-widest uppercase font-light hover:bg-stone-900 hover:text-stone-50 transition-all duration-300 group"
-            >
-              <Download size={16} />
-              Portfolio
-            </button>
           </div>
         </div>
       </div>

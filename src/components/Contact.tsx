@@ -32,9 +32,9 @@ export default function Contact() {
             Whether you have a question or just want to say hello, feel free to reach out.
           </p>
 
-          <div className="mb-16">
+          {/* <div className="mb-16">
             <ContactForm />
-          </div>
+          </div> */}
 
           <div className="flex justify-center gap-8 mb-16 flex-wrap">
             {socials.map((social) => {
