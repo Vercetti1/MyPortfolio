@@ -1,4 +1,4 @@
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Download, FileText } from 'lucide-react';
 
 interface HeroProps {
   scrollY: number;
@@ -34,17 +34,35 @@ export default function Hero({ scrollY }: HeroProps) {
             Software Developer | Full-Stack | Problem Solver
           </p>
 
-          <a
-            href="#about"
-            onClick={(e) => {
-              e.preventDefault();
-              document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-stone-900 text-stone-50 text-sm tracking-widest uppercase font-light hover:bg-stone-800 transition-all duration-300 animate-fade-up animation-delay-600 group"
-          >
-            Explore Work
-            <ArrowDown size={16} className="group-hover:translate-y-1 transition-transform duration-300" />
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animation-delay-500">
+            <a
+              href="#about"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-stone-900 text-stone-50 text-sm tracking-widest uppercase font-light hover:bg-stone-800 transition-all duration-300 group"
+            >
+              Explore Work
+              <ArrowDown size={16} className="group-hover:translate-y-1 transition-transform duration-300" />
+            </a>
+            <a
+              href="https://resume.io/r/jdrlgivmJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-stone-900 text-stone-900 text-sm tracking-widest uppercase font-light hover:bg-stone-900 hover:text-stone-50 transition-all duration-300 group"
+            >
+              <FileText size={16} />
+              View Resume
+            </a>
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-stone-900 text-stone-900 text-sm tracking-widest uppercase font-light hover:bg-stone-900 hover:text-stone-50 transition-all duration-300 group"
+            >
+              <Download size={16} />
+              Portfolio
+            </button>
+          </div>
         </div>
       </div>
 

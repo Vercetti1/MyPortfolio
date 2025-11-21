@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail, Twitter, Phone } from 'lucide-react';
 import { useState } from 'react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import ContactForm from './ContactForm';
 
 const socials = [
   { icon: Github, label: 'GitHub', href: 'https://github.com/Vercetti1' },
@@ -31,13 +32,9 @@ export default function Contact() {
             Whether you have a question or just want to say hello, feel free to reach out.
           </p>
 
-          <a
-            href="mailto:tomisinadeyinka352@gmail.com"
-            className="inline-flex items-center gap-3 px-10 py-5 bg-stone-50 text-stone-900 text-sm tracking-widest uppercase font-light hover:bg-stone-200 transition-all duration-300 mb-16 group"
-          >
-            Get In Touch
-            <Mail size={18} className="group-hover:translate-x-1 transition-transform duration-300" />
-          </a>
+          <div className="mb-16">
+            <ContactForm />
+          </div>
 
           <div className="flex justify-center gap-8 mb-16 flex-wrap">
             {socials.map((social) => {

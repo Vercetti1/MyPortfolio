@@ -1,4 +1,4 @@
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download, FileText } from 'lucide-react';
 import { useState } from 'react';
 
 interface NavigationProps {
@@ -44,7 +44,7 @@ export default function Navigation({ scrollY }: NavigationProps) {
             cy.get(Tomisin)
           </a>
 
-          <div className="hidden md:flex items-center gap-12">
+          <div className="hidden md:flex items-center gap-8">
             {links.map((link) => (
               <a
                 key={link.name}
@@ -56,6 +56,28 @@ export default function Navigation({ scrollY }: NavigationProps) {
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-stone-900 transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
+            <div className="flex items-center gap-3 ml-4 pl-4 border-l border-stone-300">
+              <a
+                href="https://resume.io/r/jdrlgivmJ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-light tracking-wide text-stone-700 hover:text-stone-900 hover:bg-stone-100 transition-all duration-300 rounded"
+              >
+                <FileText size={16} />
+                Resume
+              </a>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-light tracking-wide text-stone-700 hover:text-stone-900 hover:bg-stone-100 transition-all duration-300 rounded"
+              >
+                <Download size={16} />
+                Portfolio
+              </a>
+            </div>
           </div>
 
           <button
@@ -89,6 +111,28 @@ export default function Navigation({ scrollY }: NavigationProps) {
               {link.name}
             </a>
           ))}
+          <div className="border-t border-stone-200 pt-4 mt-4 space-y-2">
+            <a
+              href="https://resume.io/r/jdrlgivmJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 py-3 text-stone-700 hover:text-stone-900 transition-all duration-300"
+            >
+              <FileText size={16} />
+              Resume
+            </a>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="flex items-center gap-2 py-3 text-stone-700 hover:text-stone-900 transition-all duration-300"
+            >
+              <Download size={16} />
+              Portfolio
+            </a>
+          </div>
         </div>
       </div>
     </nav>
