@@ -2,7 +2,7 @@ import { ExternalLink, Github } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 import geminiImg from '../assets/gemini.png';
 import foodieImg from '../assets/Foodie.png';
-import ticTacToeImg from '../assets/Tic-Tac-Toe.png';
+import ticTacToeImg from '../assets/tic-tac-toe.png';
 import vercettiInc from "../assets/VercettiInc.png";
 import twallet from '../assets/T-wallet.png'
 import reacttoquiz from '../assets/reactquiz.png'
