@@ -2,41 +2,61 @@ import { ExternalLink, Github } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 import geminiImg from '../assets/gemini.png';
 import foodieImg from '../assets/Foodie.png';
-import sayIoImg from '../assets/say.io.png';
-import ticTacToeImg from '../assets/tic-tac-toe.png';
+import ticTacToeImg from '../assets/Tic-Tac-Toe.png';
+import vercettiInc from "../assets/VercettiInc.png";
+import twallet from '../assets/T-wallet.png'
+import reacttoquiz from '../assets/reactquiz.png'
 
 const projects = [
   {
     title: 'Gemini AI Clone',
-    description: 'A full-stack application built with modern technologies, featuring real-time updates and seamless user experience.',
+    description: "Introducing Gemini 2.0, integrated with Google's API",
     tech: ['React.js', 'API'],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/Vercetti1/Gemini-Powered-Chatbot-main.git',
+    live: 'https://tomisin-gemini.netlify.app',
     image: geminiImg,
   },
   {
     title: 'Foodie',
-    description: 'Mobile-first e-commerce platform with advanced filtering, secure payments, and inventory management.',
+    description: 'Foodie, your food companion',
     tech: ['React.js', 'Tailwind'],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/Vercetti1/Foodie.git',
+    live: 'https://thefoodie1.netlify.app/',
     image: foodieImg,
   },
   {
-    title: 'Say.io',
-    description: 'AI-powered analytics dashboard providing actionable insights with beautiful data visualizations.',
-    tech: ['HTML', 'CSS', 'Javascript'],
-    github: '#',
-    live: '#',
-    image: sayIoImg,
+    title: 'Vercetti Inc',
+    description: 'Features services rendered by the dev Vercetti.',
+    tech: ['ReactJS, TailwindCSS'],
+    github: 'https://github.com/Vercetti1/VercettiInc.git',
+    live: 'https://vercetti-inc.netlify.app/',
+    image: vercettiInc,
   },
   {
     title: 'TIC-TAC-TOE',
     description: 'Interactive tic-tac-toe game built with React, featuring AI opponent and responsive design.',
     tech: ['React.js', 'JavaScript', 'TailwindCSS'],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/Vercetti1/07-tic-tac-toe-starting-project.git',
+    live: 'https://tictacproject.netlify.app',
     image: ticTacToeImg,
+  },
+
+  {
+    title: 'React Quiz App',
+    description: 'Interactive React Quiz built with React and responsive design.',
+    tech: ['React.js', 'JavaScript', 'TailwindCSS'],
+    github: 'https://github.com/Vercetti1/React-Quiz-App-.git',
+    live: 'https://reacttoquiz.netlify.app/',
+    image: reacttoquiz,
+  },
+
+  {
+    title: 'Wallet SignUp and Login UI',
+    description: 'Interactive tic-tac-toe game built with React, featuring AI opponent and responsive design.',
+    tech: ['React.js', 'JavaScript', 'TailwindCSS'],
+    github: '#',
+    live: 'https://t-wallet.netlify.app/',
+    image: twallet,
   },
 ];
 
