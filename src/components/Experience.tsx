@@ -77,14 +77,14 @@ function ExperienceCard({
       }`}
       style={{ transitionDelay: `${index * 200}ms` }}
     >
-      <div className={`pl-6 md:pl-0 md:flex gap-12 ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
+      <div className="pl-6 md:pl-0 md:flex gap-12">
         <div className="md:w-1/2 relative">
-          <div className="absolute left-0 md:left-auto top-8 w-4 h-4 bg-stone-900 rounded-full -translate-x-1.5 md:translate-x-1.5" />
-          <div className="md:text-right md:pr-12">
+          <div className="absolute left-1/2 top-8 w-4 h-4 -translate-x-1.5" />
+          <div className="md:text-left md:ml-12">
             <div className="text-sm font-light text-stone-600 tracking-widest uppercase mb-1">
               {experience.year}
             </div>
-            <h3 className="text-2xl font-light text-stone-900 mb-1 tracking-tight ml-4">
+            <h3 className="text-2xl font-light text-stone-900 mb-1 tracking-tight">
               {experience.title}
             </h3>
             <p className="text-lg font-light text-stone-700 mb-4">{experience.company}</p>
