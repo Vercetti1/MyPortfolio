@@ -6,8 +6,17 @@ import ticTacToeImg from '../assets/tic-tac-toe.png';
 import vercettiInc from "../assets/VercettiInc.png";
 import twallet from '../assets/T-wallet.png'
 import reacttoquiz from '../assets/reactquiz.png'
+import lagosrideapp from '../assets/lagosrideapp.png'
 
 const projects = [
+  {
+    title: 'Lagos Ride App',
+    description: "Introducing Lagos Ride, your ultimate ride-hailing app for seamless travel across Lagos. With real-time tracking, secure payments, and a user-friendly interface, Lagos Ride ensures you reach your destination safely and efficiently. Experience the future of urban mobility with Lagos Ride – where every journey matters.",
+    tech: ['Next.js', 'API'],
+    github: 'https://github.com/Vercetti1/lagos-ride-app.git',
+    live: 'https://lagosride.netlify.app',
+    image: lagosrideapp,
+  },
   {
     title: 'Gemini AI Clone',
     description: "Introducing Gemini 2.0, integrated with Google's API",
@@ -27,7 +36,7 @@ const projects = [
   {
     title: 'Vercetti Inc',
     description: 'Features services rendered by the dev Vercetti.',
-    tech: ['ReactJS, TailwindCSS'],
+    tech: ['ReactJS', 'TailwindCSS'],
     github: 'https://github.com/Vercetti1/VercettiInc.git',
     live: 'https://vercetti-inc.netlify.app/',
     image: vercettiInc,
