@@ -11,7 +11,7 @@ import lagosrideapp from '../assets/lagosrideapp.png'
 const projects = [
   {
     title: 'Lagos Ride App',
-    description: "Introducing Lagos Ride, your ultimate ride-hailing app for seamless travel across Lagos. With real-time tracking, secure payments, and a user-friendly interface, Lagos Ride ensures you reach your destination safely and efficiently. Experience the future of urban mobility with Lagos Ride – where every journey matters.",
+    description: "Introducing Lagos Ride, your ultimate ride-hailing app for seamless travel across Lagos. With real-time tracking, secure payments, and a user-friendly interface, Lagos Ride ensures you reach your destination safely and efficiently. Experience the future of urban mobility with Lagos Ride - where every journey matters.",
     tech: ['Next.js', 'API'],
     github: 'https://github.com/Vercetti1/lagos-ride-app.git',
     live: 'https://lagosride.netlify.app',
